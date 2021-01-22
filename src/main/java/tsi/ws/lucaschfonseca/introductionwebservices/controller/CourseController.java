@@ -21,7 +21,7 @@ public class CourseController {
     private CourseRepository courseRepository;
 
     @PostMapping
-    public ResponseEntity<CourseDto> insert(@RequestBody @Valid CourseForm form, UriComponentsBuilder uriComponentsBuilder) {
+    public ResponseEntity<CourseDto> insert(@Valid @RequestBody CourseForm form, UriComponentsBuilder uriComponentsBuilder) {
         var course = form.map();
         courseRepository.save(course);
 

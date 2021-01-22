@@ -45,6 +45,11 @@ public class StudentController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/byCourse/{id}")
+    public List<StudentDto> fetchBycourse(@PathVariable Long id) {
+        return StudentDto.map(studentRepository.findByCourse_Id(id));
+    }
+
     @PostMapping
     @Transactional
     public ResponseEntity<StudentDto> insert(@RequestBody @Valid StudentForm form, UriComponentsBuilder uriBuilder) {

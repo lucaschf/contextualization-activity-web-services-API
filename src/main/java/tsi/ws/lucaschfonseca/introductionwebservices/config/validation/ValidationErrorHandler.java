@@ -19,6 +19,7 @@ public class ValidationErrorHandler {
     @Autowired
     MessageSource messageSource;
 
+
     @ResponseStatus(code = HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public List<FormErrorDto> handle(MethodArgumentNotValidException exception) {

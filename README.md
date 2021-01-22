@@ -5,7 +5,7 @@ Trabalho pratico de contextualizacao disciplina de Webservices do curso de tecno
 Essas instruções fornecerão uma cópia do projeto instalado e funcionando em sua máquina local para fins de desenvolvimento e teste.
 
 # Pré-requisitos
-O que você precisa para instalar o software e como instalá-los
+O que você precisa para instalar o software
 
 ```
 JDK11
